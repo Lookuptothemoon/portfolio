@@ -19,7 +19,7 @@
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="/">LR</a>
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html">LR</a>
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
@@ -34,7 +34,7 @@
             </div>
         </nav>
         
-        <section class="masthead page-section mb-0" id="work">
+        <section class="masthead page-section mb-0 portfolio" id="portfolio">
             <div class="container">
                 <!-- Work Section Heading-->
                 <div class="text-center">
@@ -50,28 +50,40 @@
                 <div class="row justify-content-center">
                     <!-- Work Items-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="work-item" data-toggle="modal" data-target="#portfolioModal0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
                             <img class="img-fluid" src="assets/img/portfolio/onesta.png" alt="Onesta"/>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="work-item" data-toggle="modal" data-target="#portfolioModal1">
-                            <img class="img-fluid" src="assets/img/portfolio/blog.png" alt="Tasty Cake"/>
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/blog.png" alt="Blog"/>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="work-item" data-toggle="modal" data-target="#portfolioModal2">
-                            <img class="img-fluid" src="assets/img/portfolio/zoo.png" alt="Circus Tent"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="work-item" data-toggle="modal" data-target="#portfolioModal3">
-                            <img class="img-fluid" src="assets/img/portfolio/afg.png" alt="A Filtered Generation"/>
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/zoo.png" alt="Zootopia"/>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Portfolio Modal-->
         <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -89,7 +101,8 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/onesta.png" alt="Onesta"/>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/onesta.png" alt="Onesta"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">
                                         I created a Flask application that scans a product's barcode and returns the name, brand and ingredients of the product. I used JavaScript library QuaggaJS and a mode function to read the product's barcode from a webcam/phone camera. Given the product's barcode, I called the Nutritionix API and extracted the wanted data, ultimately displaying the results in HTML.
@@ -103,7 +116,9 @@
                                                 It was difficult finding a <b>FREE</b> API that gives nutrition information for a product given a barcode at the time of this project's creation. Nutritionix is not entirely free (has limitations). I've learned of other options such as Open Food Facts that exist.
                                             </li>
                                         </ul>
-                                        <div><a target="_blank" href="https://github.com/Lookuptothemoon/DietaryInfo-hacknyu">Git Repo</a></div>
+                                        <div>
+                                            <a target="_blank" href="https://github.com/Lookuptothemoon/DietaryInfo-hacknyu">Git Repo</a>
+                                        </div>
                                     </p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -134,8 +149,8 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">
                                         Using Django Python, I created a blog site where I create, edit and publish posts to my website. Hosted by PythonAnywhere.
-                                        <div><a target="_blank" href="https://lookuptothemoon.pythonanywhere.com/">BLOG</a>
-                                    <p>
+                                        <div><a target="_blank" href="https://lookuptothemoon.pythonanywhere.com/">BLOG</a></div>
+                                    </p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -144,6 +159,9 @@
                 </div>
             </div>
         </div>
+
+
+
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -163,39 +181,9 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/zoo.png" alt="Zootopia Python Text Game"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">A text-based game where the user naviagates through several locations to find the bandit.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">A Filtered Generation</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/zoo.png" alt="Zootopia Python Text Game"/>
-                                    <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">
-                                        Collaborated with design interns to create landing page to showcase research done on millenials. Used HTML, CSS and JavaScript libraries GreenSock and ScrollMagic to created responsive website.
-                                        <div><a target="_blank" href="https://lookuptothemoon.github.io/">LINK</a>
+                                        A text-based game where the user navigates through several locations to find the bandit.
                                     </p>
-
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -204,7 +192,6 @@
                 </div>
             </div>
         </div>
-
 
         <footer class="footer text-center">
             <div class="container">
@@ -221,7 +208,16 @@
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="mb-4">ABOUT FREELANCER</h4>
-                        <p class="pre-wrap lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap</p>
+                        <p class="pre-wrap lead mb-0">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="work.html">WORK</a>
+                                </li>
+                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>

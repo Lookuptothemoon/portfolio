@@ -436,7 +436,7 @@ hr {
 }
 
 .img-fluid, .img-thumbnail {
-	max-width: 100%;
+	width: 100%;
 	height: auto
 }
 
@@ -10002,30 +10002,13 @@ a.text-dark:focus, a.text-dark:hover {
 
 }
 
-.work-item {
-	padding: 37px;
-	background-color: #52307c;
-	border-radius: 30px;
-}
-
-.work-item img {
-	width: 100%;
-	height: auto;
-}
-
-.work-item:hover {
-	background-color: #130c25;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-}
-
 .portfolio .portfolio-item {
 	cursor: pointer;
 	position: relative;
 	display: block;
 	max-width: 25rem;
 	border-radius: .5rem;
-	overflow: hidden
+	overflow: hidden;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -10034,7 +10017,7 @@ a.text-dark:focus, a.text-dark:hover {
 	left: 0;
 	transition: all .2s ease-in-out;
 	opacity: 0;
-	background-color: rgba(26, 188, 156, .9)
+	background-color: #52307c
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -10132,10 +10115,6 @@ form .row:first-child .floating-label-form-group {
 	height: 2rem
 }
 
-.portfolio {
-	padding-top: 6rem;
-	padding-bottom: 4.5rem
-}
 
 .page-section-heading {
 	display: inline-block
