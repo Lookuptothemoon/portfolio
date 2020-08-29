@@ -147,13 +147,13 @@ sup {
 }
 
 a {
-	color: #1abc9c;
+	color: #e83e8c;
 	text-decoration: none;
 	background-color: transparent
 }
 
 a:hover {
-	color: #117964;
+	color: #52307c;
 	text-decoration: underline
 }
 
@@ -436,8 +436,8 @@ hr {
 }
 
 .img-fluid, .img-thumbnail {
-	width: 100%;
-	height: auto
+	width: 30%;
+	height: auto;
 }
 
 .img-thumbnail {
@@ -2390,14 +2390,12 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary {
 	color: #fff;
-	background-color: #1abc9c;
-	border-color: #1abc9c
+	background-color: red;
 }
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
 	color: #fff;
-	background-color: #159a80;
-	border-color: #148f77
+	opacity: 0.5;
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -10003,6 +10001,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .portfolio .portfolio-item {
+	background-color: red;
 	cursor: pointer;
 	position: relative;
 	display: block;
@@ -10048,8 +10047,13 @@ a.text-dark:focus, a.text-dark:hover {
 	top: 1rem;
 	font-size: 3rem;
 	line-height: 3rem;
-	color: #1abc9c;
+	color: red;
 	opacity: 1
+}
+
+.portfolio-img {
+	width: 100%;
+	height: 220px;
 }
 
 .floating-label-form-group {

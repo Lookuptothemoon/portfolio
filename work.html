@@ -19,15 +19,19 @@
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
-            <div class="container"><a class="navbar-brand js-scroll-trigger" href="index.html">LR</a>
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html">LR</a>
                 <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="work.html">WORK</a>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="work.html">WORK</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">CONTACT</a>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -56,9 +60,10 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/onesta.png" alt="Onesta"/>
+                            <img class="portfolio-img" src="assets/img/portfolio/onesta.gif" alt="Onesta"/>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -66,7 +71,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/blog.png" alt="Blog"/>
+                            <img class="portfolio-img" src="assets/img/portfolio/zootopia.gif" alt="Zootopia"/>
                         </div>
                     </div>
 
@@ -77,7 +82,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/zoo.png" alt="Zootopia"/>
+                            <img class="portfolio-img" src="assets/img/portfolio/afg.gif" alt="A Filtered Generation"/>
                         </div>
                     </div>
                 </div>
@@ -102,24 +107,33 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/onesta.png" alt="Onesta"/>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/onesta-logo.png" alt="Onesta"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">
-                                        I created a Flask application that scans a product's barcode and returns the name, brand and ingredients of the product. I used JavaScript library QuaggaJS and a mode function to read the product's barcode from a webcam/phone camera. Given the product's barcode, I called the Nutritionix API and extracted the wanted data, ultimately displaying the results in HTML.
-
+                                    <div class="mb-5">
+                                        <p>
+                                            Onesta is a Flask application that was birthed at HackNYU 2019 by five individuals. Onesta scans a product's barcode and returns the name, brand and ingredients of the product. I used JavaScript library QuaggaJS and a mode function to read the product's barcode from a webcam/phone camera. Given the product's barcode, I called the Nutritionix API and extracted the wanted data, ultimately displaying the results in HTML.
+                                        </p>
                                         <h5>Challenges:</h5>
                                         <ul style="text-align: left">
                                             <li>
-                                                I used a JavaScript library to read the barcodes and Flask to make an API call. This meant using JQuery's post method to call the '/barcode' route function in Flask and use jQuery replaceWith() method to replace some HTML with the response from Flask (since render_template refreshed the page, therefore losing the data from API call). In the future, I believe it would be better to use a JavaScript-based web framework such as Node.js
+                                                Originally, the purpose of this project was to provide more information on those hard-to-pronounce ingredients in an attempt to teach users' about the food they put into their body. Unfortunately, it was difficult to find a public database with information on these ingredients, so we decided to drop the explanation part. However, it was also difficult finding a <b>FREE</b> API that gives nutrition information for a product given a barcode at the time of this project's creation. Nutritionix is not entirely free (has limitations). I've learned of other options such as Open Food Facts that exist.
                                             </li>
                                             <li>
-                                                It was difficult finding a <b>FREE</b> API that gives nutrition information for a product given a barcode at the time of this project's creation. Nutritionix is not entirely free (has limitations). I've learned of other options such as Open Food Facts that exist.
+                                                I used a JavaScript library to read the barcodes and Flask to make an API call. This meant using JQuery's post method to call the '/barcode' route function in Flask and use jQuery replaceWith() method to replace some HTML with the response from Flask (since render_template refreshed the page, therefore losing the data from API call). In the future, I believe it would be better to use a JavaScript-based web framework such as Node.js
                                             </li>
                                         </ul>
+                                        <p>
+                                            Built with: <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank">Flask</a>, HTML, CSS, JavaScript (jQuery, Ajax, JSON, 
+                                            <a href="https://serratus.github.io/quaggaJS/" target="_blank">quaggaJS</a>), 
+                                            <a href="https://developer.nutritionix.com/" target="_blank">Nutritionix API</a>
+                                        </p>
+                                        <div>
+                                            <a target="_blank" href="https://devpost.com/software/onesta">Devpost Submission</a>
+                                        </div>
                                         <div>
                                             <a target="_blank" href="https://github.com/Lookuptothemoon/DietaryInfo-hacknyu">Git Repo</a>
                                         </div>
-                                    </p>
+                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -128,6 +142,7 @@
                 </div>
             </div>
         </div>
+
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
@@ -137,7 +152,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Django Blog</h2>
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Zootopia Python Game</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -145,12 +160,26 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blog.png" alt="Django Blog"/>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/terminal.png" alt="Zootopia Python Text Game"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">
-                                        Using Django Python, I created a blog site where I create, edit and publish posts to my website. Hosted by PythonAnywhere.
-                                        <div><a target="_blank" href="https://lookuptothemoon.pythonanywhere.com/">BLOG</a></div>
-                                    </p>
+                                    <div class="mb-5">
+                                        <p>
+                                            Zootopia was made by 4 high school kids (including myself) in order to apply skills learned in computer science class. Zootopia, loosely based on the famous animated film, is a text adventure game where Sterny the Squirrel travels the world of Zootopia to find his stolen goods. As Sterny travels across all the burrows of Zootopia, he gives the user a list of suspects, in which the user must guess who the bandit is. If the user guesses the bandit correctly, they retrieve a golden acorn (revealed at end). The purpose of the game is to collect all of Sterny's stolen golden acorns.
+                                        </p>
+                                        <p>
+                                            The code for this game included classes such as Location for each burrow, Map for mapping of locations (in terms of order), Player for characters in the game, Suspect for suspected bandits, and a Game Engine to control flow of game.
+                                        </p>
+                                        <h5>Challenges:</h5>
+                                        <ul style="text-align: left">
+                                            <li>
+                                                This collaborative project required that communication was made between all teammates. Initially, we thought it would be best to divide and conquer the classes needed for our proposed plan. However, we did not take into consideration merging our code together until much later. This resulted in a lot of syntax errors, but also taught us what it means for several people to collaborate on a project together.
+                                            </li>
+                                        </ul>
+                                        <p>Skills: Object-oriented programming, game design, inheritance (parent/child classes), code orginization, finite state machines, communication and collaborative programming.</p>
+                                        <div>
+                                            <a href="assets/zootopia.zip">Download .zip</a>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -159,8 +188,6 @@
                 </div>
             </div>
         </div>
-
-
 
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -179,11 +206,32 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/zoo.png" alt="Zootopia Python Text Game"/>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/afg.png" alt="Zootopia Python Text Game"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">
-                                        A text-based game where the user navigates through several locations to find the bandit.
-                                    </p>
+                                    <div class="mb-5">
+                                        <p>
+                                            A Filtered Generation (AFG) was a project created during my internship at 
+                                            <a href="https://catch-nyc.com/" target="_blank">CATCH NYC</a> in 2016. I had previosly held an internship where I did some coding work, but CATCH NYC was the first place where I worked with non-coders to creating a website (a small coding project). I collaborated with three design interns to create a responsive landing page, showcasing research done on millenials. 
+                                        </p>
+                                        <h4>Challenges:</h4>
+                                        <ul style="text-align: left">
+                                            <li>
+                                                I had never collaborated on a project where I had to explain technical terms to non-coders. I struggled to find the language needed to communicate with these three design interns. For example, I was given a .psd file highlighting the layout for the landing page, including text images. I wasn't sure what I was supposed to do with the file, so I asked another web developer colleague to help guide me through the process. Turns out, I needed more than the .psd file to complete the project (i.e. raw text and fonts, imgs, etc.). Overall, I learned what was possible in web development but also what deliverables to expect from a client.
+                                            </li>
+                                            <li>
+                                                I was responsible for creating the project from scratch and deciding how the project was going to be built. I did not have much experience in web development at the time so doing this was a struggle. I did not know a lot about hosting, using JavaScript libraries, etc. Aside from asking my web developer colleagues, I used my documentation-reading skills to figure out how to implement the neccessary functions needed for the project (also, thousands of ways on how not to do things). Fortunately, I was able to complete and present my part of the project in a timely manner.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Built with: HTML, CSS, JavaScript
+                                            (<a href="https://greensock.com/" target="_blank">Greensock</a>, 
+                                            <a href="https://scrollmagic.io/" target="_blank">ScrollMagic</a>), GitHub Pages
+                                        </p>
+                                        <p>Skills: Cross-functional communication, collaboration, problem solving, being resourceful</p>
+                                        <div>
+                                            <a href="https://lookuptothemoon.github.io/" target="_blank">Visit Site</a>
+                                        </div>
+                                    </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
@@ -196,28 +244,27 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">LOCATION</h4>
-                        <p class="pre-wrap lead mb-0">West Harlem<br> New York, NY 10031</p>
-                    </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-4">AROUND THE WEB</h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/lookup2themoon"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lunaruiz"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="mb-4">FOLLOW ME</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com/lookup2themoon" target="_blank">
+                            <i class="fab fa-fw fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lunaruiz" target="_blank">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/lueliz.tech/" target="_blank">
+                            <i class="fab fa-fw fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Lookuptothemoon/" target="_blank">
+                            <i class="fab fa-fw fa-github"></i>
+                        </a>
                     </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">ABOUT FREELANCER</h4>
-                        <p class="pre-wrap lead mb-0">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="work.html">WORK</a>
-                                </li>
-                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">ABOUT</a>
-                                </li>
-                                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">CONTACT</a>
-                                </li>
-                            </ul>
-                        </p>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="mb-4">CHECK OUT MY BLOG</h4>
+                        <a class="btn btn-outline-light mx-1" href="https://lookuptothemoon.pythonanywhere.com/" target="_blank">
+                            LuEliz
+                        </a>
                     </div>
                 </div>
             </div>
