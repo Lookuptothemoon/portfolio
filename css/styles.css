@@ -153,8 +153,12 @@ a {
 }
 
 a:hover {
-	color: #52307c;
+	color: #dcd0ff;
 	text-decoration: underline
+}
+
+a:visited {
+	color: red;
 }
 
 a:not([href]), a:not([href]):hover {
