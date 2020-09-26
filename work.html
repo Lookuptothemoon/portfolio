@@ -9,7 +9,10 @@
         <!-- Favicon -->   
         <link href="assets/img/logo.ico" rel="shortcut icon"/>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Scripts -->
+            <!-- Jquery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178884661-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -18,6 +21,10 @@
 
             gtag('config', 'UA-178884661-1');
         </script>
+            <!-- Bootstrap core JS-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <!-- MAIN -->
+        <script type="text/javascript" src="js/scripts.js"></script>
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
@@ -27,6 +34,7 @@
         <link rel="stylesheet" href="css/heading.css">
         <link rel="stylesheet" href="css/body.css">
     </head>
+
     <body id="page-top">
         <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
             <div class="container">
@@ -107,6 +115,17 @@
                                 </div>
                             </div>
                             <img class="portfolio-img" src="assets/img/portfolio/FoodCAD.gif" alt="FoodCAD"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="portfolio-img" src="assets/img/portfolio/iot.gif" alt="I Opt Trash (IOT)"/>
                         </div>
                     </div>
                 </div>
@@ -282,7 +301,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/FoodCAD-logo.png" alt="Zootopia Python Text Game"/>
+                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/FoodCAD-logo.png" alt="FoodCAD 3D modeling application"/>
                                     <!-- Portfolio Modal - Text-->
                                     <div class="mb-5">
                                         <p>
@@ -296,13 +315,85 @@
                                                 It was difficult finding a open-source project that would allow us to create our own FoodCAD program that would give us exactly what we needed and was easy to use. Initially, we tried to use FreeCAD but not only had trouble figuring out how to install/run the program, but also had trouble understanding the immense amount of code. We decided that 
                                                 <a href="https://www.freecadweb.org/" target="_blank">FreeCAD</a> hadway more functions than we needed so we decided to go with the Qt toolkit.
                                             </li>
+                                            <li>
+                                                The OpenGL library wasn't too difficult to work since I had used it before in my Computer Graphics class. However, Qt Creator was very difficult to use at first. From the couple of hours I had to allocate just to download the application, I also spent a few hours trying to connect my code to the UI components. This was by far one of the most difficult projects I have had to figure out. I initially was working on this project with another partner, but . Overall, I can't compain. I was able to accomplish so much from this project. From applying the linear algebra skills I learned in the classroom and trying to figure out how to create this program with little documentation, I was able to find a way to create an innovative real-world application.
+                                            </li>
+                                            <li>
+                                                I could not figure out how to identify the correct vector points for the 3D objects created by the user, therefore not being able to create an .stl file for the user to download. I was able to figure out how to download a simple 3D cube but did not know how to correctly translate that into other shapes.
+                                            </li>
+                                            <li>
+                                                It is not possible to export a Qt Creator project. Therefore, in order to see/edit the project itself, one must download Qt Creator. Also, I believe the application (.exe) only works in Windows.
+                                            </li>
                                         </ul>
                                         <p>
-                                            Built with: <a href="https://www.qt.io/" target="_blank">Qt</a>, 
+                                            Built with: <a href="https://www.qt.io/product/development-tools" target="_blank">Qt</a>, 
                                             <a href="https://doc.qt.io/qt-5/qtopengl-index.html" target="_blank">OpenGL</a>
                                         </p>
+                                        <div>
+                                            <a href="assets/MyOpenGL.zip" target="_blank">Download .zip</a>
+                                        </div>
+                                        <div>
+                                            <a href="assets/foodcad-report.pdf" target="_blank">Download Report</a>
+                                        </div>
                                     </div>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button onclick="stopVideo()" class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">I Opt Trash (IOT)</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-3" src="assets/img/portfolio/iot-logo.png" alt="I Opt Trash"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <div class="mb-5">
+                                        <p>
+                                            During a MAKECU Hackathon, I teamed up with three participants to optimize a trash can. Using an Arduino and Myo Gesture Control Armband, we were able to move a trash can in different directions with simple hand gestures.
+                                        </p>
+                                        <p>
+                                            I Opt Trash (IOT) came about after having spent several hours on attempting to solve another problem. Initially, we wanted to create a Code Anywhere Virtual Reality application using the <a href="https://www.oculus.com/rift/" target="_blank">Oculus Rift</a>. The user would be able to transport anywhere in the world and code on a virtual keyboard. Unfortunately, the Oculus Rift required a heavy machine to work on and the hackathon sponsors did not have the right equiptment. After spending a few hours trying to get that to work, we decided to change our project. After only a few hours of work, we grew tired. We thought, what's a problem we can solve? It doesn't have to be big but should allow people to be more lazy (lol!). While joking about this, we saw that our table was being filled with more trash by the minute. We thought, "What if we could make the garbage can move towards us so that we don't have to get up to throw it away?!" Thus, I Opt Trash (IOT) came along.
+                                        </p>
+                                        <p>
+                                            We won the <b>Judge's Choice Award</b> out of more than 10 other groups.
+                                        </p>
+                                        <iframe class="video" src="https://www.youtube.com/embed/aSJr6Wj4OH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe> <b>Note: </b>Make sure volume is down. Screeching sound is due to poor audio. <br/> <br/>
+
+                                        <h4>Challenges:</h4>
+                                        <ul style="text-align: left">
+                                            <li>
+                                                The Myo Gesture Control Armband was a great and easy tool to used but after hours of development and testing, the armband started to stretch out and decreases in reliability. There were times when the armband would read the signals and act as expected and there were times when it simply did not respond. This ultimately did not lead to the best results during our live demo (good thing we had a video).
+                                            </li>
+                                            <li>
+                                                The wheels and motors used for our trash can were not strong/powerful enough to handle the weight of the trash can. We tried cutting the trash can down to decrease its weight, which helped a lot. However, it was not enough for some surfaces that were harder to travel on (i.e. carpet). Ultimately, this issue led to some time spent in the Makerlab modifying parts and build connectors.
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Built with: <a href="https://www.arduino.cc/" target="_blank">Arduino, <a href="https://www.amazon.com/Thalmic-Labs-Gesture-Control-Presentations/dp/B00VHWBH02" target="_blank">Myo Gesture Control Band</a>
+                                        </p>
+                                        <div>
+                                            <a href="https://devpost.com/software/i-opt-trash-iot" target="_blank">Devpost Submission</a>
+                                        </div>
+                                    </div>
+                                    <button onclick="stopVideo()" class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>
                         </div>
@@ -343,17 +434,5 @@
         <section class="copyright py-4 text-center text-white">
             <div class="container"><small class="pre-wrap">Copyright © Luna Ruiz</small></div>
         </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>

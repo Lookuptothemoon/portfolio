@@ -10160,3 +10160,16 @@ form .row:first-child .floating-label-form-group {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+
+.video {
+	width: 100%;
+	height: auto;
+}
+
+#skills-wrapper {
+	text-align: left;
+}
+
+.skills-title {
+	font-weight: 900;
+}
