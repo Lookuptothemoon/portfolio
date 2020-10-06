@@ -218,8 +218,10 @@ nav {
 	color: white;
 	border: 3px solid #130c25;
 	border-radius: 10px;
-	width: 20%;
-	height: 50px;
+	text-align: center;
+	width: 150px;
+	height: 60px;
+	font-size: 12px;
 }
 .submit-btn:hover {
 	background-color: white;
