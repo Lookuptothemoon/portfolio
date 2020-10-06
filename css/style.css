@@ -5,6 +5,7 @@
 body {
 	background-color: white;
 	font-family: "Merriweather Sans";
+	min-width: 320px;
 }
 
 /* HEADER */
@@ -54,6 +55,7 @@ nav {
 	color: white;
 }
 
+
 /* HOME PAGE */
 /* bio */
 .home, .work, .resume, .contact {
@@ -62,7 +64,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	margin-top: 93px;
-	padding: 50px;
+	padding: 50px 0;
 }
 .home {
 	flex-direction: row;
@@ -76,45 +78,56 @@ nav {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 900px;
 	border: 3px solid #130c25;
-	border-radius: 37px;
-	height: 1200px;
-	margin: 0 20px;
-	padding: 0 50px;
+	border-radius: 15px;
+	height: 1000px;
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 10px;
+	padding: 0 5px;
 }
 .home-bio-name {
-	font-size: 70px;
+	font-size: 30px;
 }
 .home-bio-img {
-	min-width: 300px;
+	min-width: 200px;
 	max-width: 700px;
 	width: 70%;
 }
 .home-bio-edu {
-	font-size: 30px;
+	font-size: 20px;
 }
 .home-bio-skills {
 	text-align: left;
-	font-size: 23px;
+	font-size: 18px;
 	margin: 20px 0;
 }
 .home-bio-skills-item {
 	display: flex;
 	flex-wrap: wrap;
 }
+.home-bio-skills-item:nth-child(1) {
+	margin-bottom: 20px;
+}
+.home-bio-skills-item p:nth-child(1) {
+	width: 100%;
+}
+.home-bio-skills-item p:nth-child(2) {
+	text-align: center;
+	width: 100%;
+}
 .summary {
-	font-size: 22px;
+	font-size: 15px;
 	margin-bottom: 20px;
 }
 /* work */
 .home-work {
 	background-color: white;
 	color: #130c25;
+	margin-top: 20px;
 }
 .current-work-list {
 	width: 100%;
-	font-size: 22px;
 	margin-bottom: 20px;
 }
 .current-work-list ul {
@@ -123,6 +136,7 @@ nav {
 }
 .current-work-list ul li {
 }
+
 
 /* WORK PAGE */
 .work {
@@ -138,13 +152,16 @@ nav {
 	padding: 0;
 }
 .work-project li {
-	margin: 10px 20px;
+	margin: 10px 0px;
 }
+
 
 /* RESUME PAGE */
 .resume {
 	color: white;
 	background-color: #52307c;
+	padding: 0 20px;
+	font-size: 14px;
 }
 .resume-goal, .resume-exp {
 	margin-bottom: 40px;
@@ -189,6 +206,13 @@ nav {
 	margin-bottom: 20px;
 }
 
+
+
+
+
+
+
+
 /* CONTACT PAGE */
 .contact {
 }
@@ -200,7 +224,7 @@ nav {
 	border-radius: 20px;
 	width: 80%;
 	max-width: 600px;
-	padding: 50px;
+	padding: 20px;
 }
 .contact-form-item {
 	margin-bottom: 15px;
@@ -274,7 +298,7 @@ a {
 	border-radius: 100%;
 	color: white;
 	font-size: 25px;
-	padding: 20px;
+	padding: 15px;
 	margin: 0 5px;
 }
 .small-social a{
@@ -343,9 +367,11 @@ a {
 	top: 50px;
 	left: 50%;
 	transform: translate(-50%, 0);
-	width: 60%;
+	font-size: 15px;
+	width: 75%;
 	margin: 30px 0;
-	padding: 20px 70px;
+	padding: 20px 30px;
+	max-width: 1200px;
 }
 .close-modal-top, .close-modal-bottom {
 	background-color: white;
@@ -357,14 +383,14 @@ a {
 }
 .close-modal-top {
 	position: absolute;
-	right: 50px;
+	right: 20px;
 	top: 40px;
 }
 .close-modal-bottom {
 	background-color: red;
 	color: white;
 	border: 1px solid red;
-	font-size: 15px;
+	font-size: 12px;
 }
 .close-modal-top:hover {
 	background-color: red;
@@ -398,7 +424,7 @@ a {
 }
 .modal-content li:before {
 	position: absolute;
-	left: 10px;
+	left: 0;
 	content: "💪";
 }
 .modal-built-with {
@@ -416,14 +442,20 @@ a {
 	border-radius: 15px;
 }
 .modal-btn-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 }
 .modal-btn-content img {
 	height: 300px;
-	border-radius: 15px;
+	max-width: 100%;
+	object-fit: contain;
+	margin: 0 20px;
+	border-radius: 10px;
 }
 .modal-btn-overlay {
-	background-color: rgba(82,48,124,0.97);
+	background-color: rgba(82,48,124,0.9);
 	border-radius: 15px;
 	opacity: 0;
 	position: absolute;
@@ -477,80 +509,101 @@ a {
 	color: #e83e8c;
 }
 .title {
+	text-align: center;
 	font-size: 50px;
 }
 
 /* SCREEN SIZE CHANGES */
 /* font size changes */
-@media all and (max-width: 1100px) {
-	.home-bio-name {
-		font-size: 60px;
-	}
-	.home-bio-edu {
-		font-size: 20px;
-	}
-	.home-bio-skills {
-		font-size: 20px;
-	}
-	.summary {
-		font-size: 20px;
-	}
-	.current-work-list {
-		font-size: 20px;
-	}
-}
-@media all and (max-width: 822px) {
-	.home-bio-name {
-		font-size: 50px;
-	}
-	.home-bio-skills {
-		font-size: 18px;
-	}
-	.summary {
-		font-size: 18px;
-	}
-	.current-work-list {
-		font-size: 18px;
-	}
-}
-@media all and (max-width: 852px) {
+@media all and (min-width: 375px) {
 	.home-bio, .home-work {
-		height: 1000px;
+		margin: 0 20px;
+		padding: 0 10px;
 	}
-	.home-bio-name {
-		font-size: 40px;
-	}
-	.home-bio-edu {
-		font-size: 18px;
-	}
-	.home-bio-skills {
-		font-size: 14px;
-	}
-	.summary {
-		font-size: 16px;
-	}
-	.current-work-list {
-		font-size: 16px;
+	.home-work {
+		margin-top: 20px;
 	}
 }
-@media all and (max-width: 680px) {
+@media all and (min-width: 425px) {
 	.home-bio, .home-work {
-		height: 950px;
+		padding: 0 15px;
 	}
-	.home-bio-name {
-		font-size: 37px;
-	}
-	.home-bio-skills {
-		font-size: 10px;
+	.contact-form {
+		padding: 37px;
 	}
 }
-
-/* home card margin (split) */
-@media all and (max-width: 2191px) {
+@media all and (min-width: 768px) {
+	.home-bio, .home-work {
+		margin: 0 30px;
+		padding: 0 50px;
+		height: 1200px;
+	}
 	.home-work {
 		margin-top: 50px;
 	}
+	.home-bio-name {
+		font-size: 50px;
+	}
+	.home-bio-edu {
+		font-size: 25px;
+	}
+	.home-bio-skills {
+		font-size: 20px;
+	}
+	.summary {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.modal-content {
+		font-size: 20px;
+		margin: 0 20px;
+		padding: 20px 50px;
+	}
+	.resume {
+		font-size: 16px;
+	}
+	.contact-form {
+		padding: 50px;
+	}
 }
+@media all and (min-width: 1024px) {
+	.home-bio, .home-work {
+		margin: 0 30px;
+		padding: 0 50px;
+		height: 1350px;
+	}
+	.home-work {
+		margin-top: 50px;
+	}
+	.home-bio-name {
+		font-size: 60px;
+	}
+	.modal-content {
+		margin: 0 20px;
+		padding: 20px 70px;
+	}
+}
+@media all and (min-width: 1440px) {
+	.home {
+		flex-direction: row;
+	}
+	.home-bio, .home-work {
+		width: 37%;
+	}
+	.home-work {
+		margin-top: 0px;
+	}
+	.modal-content {
+		font-size: 22px;
+		margin: 0 20px;
+		padding: 20px 80px;
+	}
+	.resume {
+		font-size: 20px;
+	}
+}
+/* end home screen changes */
+
 
 /* device screen changes */
 @media all and (max-width: 961px) {
